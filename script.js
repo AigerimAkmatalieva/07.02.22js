@@ -50,3 +50,24 @@ for (let i = 0; i < shoppingList.length; i++) {
 let button2 = buttonElement.cloneNode();
 button2.textContent = "How do you do?"
 exercisesElement.prepend(button2);
+button2.style.backgroundColor = "yellow";
+
+let button3 = buttonElement.cloneNode();
+button3.textContent = "Hello"
+exercisesElement.append(button3);
+button3.style.backgroundColor = "red";
+
+let button4 = buttonElement.cloneNode();
+button4.textContent = "Hello world"
+exercisesElement.prepend(button4);
+button4.style.backgroundColor = "purple";
+
+let button5 = buttonElement.cloneNode();
+button5.textContent = "Sign Up"
+exercisesElement.before(button5);
+button5.style.backgroundColor = "black";
+
+let button6 = buttonElement.cloneNode();
+button6.textContent = "Login"
+exercisesElement.after(button6);
+button6.style.backgroundColor = "red";
