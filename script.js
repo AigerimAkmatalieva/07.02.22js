@@ -12,3 +12,7 @@ exercisesElement.append(h2Element);
 let h3Element = document.createElement('h3');
 h3Element.textContent = "H3 header";
 exercisesElement.append(h3Element);
+
+let h4Element = document.createElement('h4');
+exercisesElement.append(h4Element);
+h4Element.textContent = "H4 header";
