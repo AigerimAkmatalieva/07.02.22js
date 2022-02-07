@@ -46,3 +46,7 @@ for (let i = 0; i < shoppingList.length; i++) {
   listElement.append(listItemElement);
   listItemElement.textContent = shoppingList[i]
 }
+
+let button2 = buttonElement.cloneNode();
+button2.textContent = "How do you do?"
+exercisesElement.prepend(button2);
