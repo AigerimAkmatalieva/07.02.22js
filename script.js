@@ -34,3 +34,14 @@ buttonElement.style.height = "40px";
 buttonElement.style.borderRadius = "10px";
 buttonElement.style.color = "white";
 buttonElement.style.border = "none";
+
+
+let shoppingList = ['Apple', 'Banana', 'Pineapple'];
+
+let listElement = document.createElement('ul');
+exercisesElement.prepend(listElement);
+for (let i = 0; i < shoppingList.length; i++) {
+  let listItemElement = document.createElement('li');
+  listElement.append(listItemElement);
+  listItemElement.textContent = shoppingList[i]
+}
