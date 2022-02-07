@@ -36,16 +36,7 @@ buttonElement.style.color = "white";
 buttonElement.style.border = "none";
 
 
-let shoppingList = ['Apple', 'Banana', 'Pineapple'];
-//Create UL
-let listElement = document.createElement('ul');
-exercisesElement.prepend(listElement);
-//Create LI
-for (let i = 0; i < shoppingList.length; i++) {
-  let listItemElement = document.createElement('li');
-  listElement.append(listItemElement);
-  listItemElement.textContent = shoppingList[i]
-}
+
 
 let button2 = buttonElement.cloneNode();
 button2.textContent = "How do you do?"
@@ -75,5 +66,21 @@ button6.style.backgroundColor = "red";
 button2.remove();
 
 
-let list2 = listElement.cloneNode();
-exercisesElement.prepend(list2);
+
+let shoppingList = ['Apple', 'Banana', 'Pineapple'];
+
+let table = document.createElement('table');
+exercisesElement.prepend(table);
+
+for (let i = 0; i < shoppingList.length; i++) {
+  let tr = document.createElement('tr');
+  table.append(tr);
+  let td = document.createElement('td');
+  tr.append(td);
+  td.textContent = shoppingList[i]
+}
+
+
+let colorful = document.createElement('div');
+colorful.textContent = "Hello";
+document.body.prepend(colorful);
