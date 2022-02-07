@@ -71,3 +71,9 @@ let button6 = buttonElement.cloneNode();
 button6.textContent = "Login"
 exercisesElement.after(button6);
 button6.style.backgroundColor = "red";
+
+button2.remove();
+
+
+let list2 = listElement.cloneNode();
+exercisesElement.prepend(list2);
