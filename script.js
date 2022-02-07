@@ -37,9 +37,10 @@ buttonElement.style.border = "none";
 
 
 let shoppingList = ['Apple', 'Banana', 'Pineapple'];
-
+//Create UL
 let listElement = document.createElement('ul');
 exercisesElement.prepend(listElement);
+//Create LI
 for (let i = 0; i < shoppingList.length; i++) {
   let listItemElement = document.createElement('li');
   listElement.append(listItemElement);
