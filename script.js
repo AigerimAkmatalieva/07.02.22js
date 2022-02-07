@@ -28,8 +28,9 @@ h6Element.textContent = "H6 header";
 
 let buttonElement = document.createElement('button');
 buttonElement.textContent = "Launch Meeting";
-exercisesElement.append(buttonElement);
+exercisesElement.prepend(buttonElement);
 buttonElement.style.backgroundColor = "blue";
 buttonElement.style.height = "40px";
-buttonElement.style.borderRadius = "5px";
+buttonElement.style.borderRadius = "10px";
 buttonElement.style.color = "white";
+buttonElement.style.border = "none";
